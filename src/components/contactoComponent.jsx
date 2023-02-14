@@ -8,9 +8,9 @@ const contactoComponent = ({ contacto }) => {
     <div>
       Contacto - Componente
       <h2>Nombre: {contacto.nombre}</h2>
-      <h3>Apellido: {contacto.apellido}</h3>
-      <h4>Email: {contacto.email}</h4>
-      <h5>
+      <h2>Apellido: {contacto.apellido}</h2>
+      <h2>Email: {contacto.email}</h2>
+      <h2>
         Conectado:{" "}
         <span
           style={{
@@ -19,7 +19,7 @@ const contactoComponent = ({ contacto }) => {
         >
           {contacto.conectado ? ESTADO.CONNECTED : ESTADO.OFFLINE}
         </span>
-      </h5>
+      </h2>
     </div>
   );
 };
